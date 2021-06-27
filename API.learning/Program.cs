@@ -47,6 +47,7 @@ namespace API.learning
 
                 var users = JsonConvert.DeserializeObject<List<User>>(contentString);
 
+                // filter with linq
                 var SamanthaUserId = users.Where(u => u.Username == "Samantha").Select(u => u.Id).FirstOrDefault();
             }
 
