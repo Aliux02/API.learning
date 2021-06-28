@@ -9,7 +9,7 @@ namespace API.learning.Models
     public class User
     {
         public string Username { get; set; }
-        
         public int Id { get; set; }
+        public string Email { get; set; }
     }
 }
